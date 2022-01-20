@@ -486,8 +486,8 @@
 				let cells = document.querySelectorAll('#level tr td');
 				let id = 0;
 				for (let cell of cells) {
-					id++;
 					cell.className = tableau[id].replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '').toLowerCase();
+					id++;
 				};
 			}
 			file.readAsText(this.files[0]);
